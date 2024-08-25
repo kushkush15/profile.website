@@ -1,0 +1,149 @@
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "top top top"
+                         "top top top"
+                          "header header header"
+                            "goat family pepeha"
+                            "goat fav pepeha"
+                           "goat fav flag"
+                           "footer footer footer";
+    text-align: center;
+    background-color: #E8FDFF;
+}
+
+#top{
+    grid-area: top;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "logo name"
+                        "logo nav";
+    text-align: center;
+    background-color: #FFD3E2;
+}
+
+#logo{
+    grid-area: logo;
+    background-color: #FFF8E1;
+}
+
+#logo img{
+    border: none;
+    margin-top: 20px
+}
+
+#name{
+    grid-area: name;
+    color: rebeccapurple;
+    font-family: sans-serif
+}
+
+#nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "home culture aboutme skills"
+}
+
+#home{
+    grid-area: home;
+}
+
+#culture{
+    grid-area: culture;
+}
+
+#aboutme{
+    grid-area: aboutme;
+}
+
+#skills{
+    grid-area: skills;
+}
+
+#fav{
+    grid-area: fav;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "favanimal favcolour";
+    grid-gap: 50px;
+}
+
+#favanimal{
+    grid-area: favanimal;
+    font-family: fantasy;
+}
+
+#favcolour{
+    grid-area: favcolour;
+    font-family: fantasy;
+}
+
+#header{
+    grid-area: header;
+    background-color: #EDBAF8;
+}
+#header p{
+    background-color: #EDBAF8;
+}
+
+#goat{
+    grid-area: goat;
+    font-family: fantasy;
+}
+
+#family{
+    grid-area: family;
+    font-family: fantasy;
+}
+
+#pepeha{
+    grid-area: pepeha;
+    font-family: fantasy;
+}
+
+
+#flag{
+    grid-area: flag;
+    font-family: fantasy;
+}
+
+#footer{
+    grid-area: footer;
+    background-color: #FFD3E2;
+}
+#footer img{
+    border: none
+}
+
+img{
+    border: 20px solid white;
+    border-radius: 120px;
+    transition: transform .2s;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+#nav a:hover{background-color:#FFF8E1;
+display:inline-block;
+margin-left:15px;
+padding-left:20px;
+padding-right:10px;
+    transition-duration:0.4s;}
+
+a{
+    text-decoration:none;
+    color: darkorchid
+}
+h1{
+    font-family: sans-serif
+}
+p{
+    background-color: #E8FDFF;
+        position: relative;
+}
+#footer p{
+    background-color: #FFD3E2
+}

@@ -1,0 +1,171 @@
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "top top top"
+                        "header header header"
+                        "tajmal flag marine"
+                        "tajmal languages marine"
+                        "titleforfood titleforfood titleforfood"
+                        "food food food"
+                        "titleforfes titleforfes titleforfes"
+                        "festivals festivals festivals"
+                        "footer footer footer";
+    text-align: center;
+    background-color: #E8FDFF;
+}
+
+#footer{
+    grid-area: footer;
+    background-color: #FFD3E2;
+}
+
+#top{
+    grid-area: top;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "logo name"
+                        "logo nav";
+}
+#logo{
+    grid-area: logo;
+    background-color: #FAF3EA;
+}
+#name{
+    grid-area: name;
+    background-color: #FFD3E2;
+}
+#nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "home culture aboutme skills";
+    background-color: #FFD3E2;
+}
+#home{
+    grid-area: home;
+}
+#culture{
+    grid-area: culture;
+}
+#aboutme{
+    grid-area: aboutme;
+}
+#skills{
+    grid-area: skills;
+}
+#header{
+    grid-area: header;
+    background-color: #EDBAF8;
+}
+#tajmal{
+    grid-area: tajmal;
+    font-family: fantasy;
+}
+#flag{
+    grid-area: flag;
+    font-family: fantasy;
+}
+#marine{
+    grid-area: marine;
+    font-family: fantasy;
+}
+#languages{
+    grid-area: languages;
+    grid-gap: 200px;
+}
+#food{
+    grid-area: food;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "paneer chai butterchicken gulab";
+ }
+#paneer{
+    grid-area: paneer;
+    font-family: fantasy;
+}
+#chai{
+    grid-area: chai;
+    font-family: fantasy;
+}
+#butterchicken{
+    grid-area: butterchicken;
+    font-family: fantasy;
+}
+#gulab{
+    grid-area: gulab;
+    font-family: fantasy;
+}
+#festivals{
+    grid-area: festivals;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "holi hwords diwali dwords";
+    grid-gap: 30px;
+}
+#holi{
+    grid-area: holi;
+}
+#diwali{
+    grid-area: diwali;
+}
+#hwords{
+    grid-area: hwords;
+}
+#dwords{
+    grid-area: dwords;
+}
+
+img{
+    border: 20px solid white;
+    transition: transform .2s;
+    border-radius: 100px;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+#food img{
+    border: none;
+    border-radius: 0;
+}
+
+#titleforfood{
+    grid-area: titleforfood;
+    background-color: #FFD3E2;
+    margin: 10px;
+}
+
+#titleforfes{
+    grid-area: titleforfes;
+    background-color: #EDBAF8;
+    margin: 10px;
+}
+#nav a:hover{background-color:#FFF8E1;
+display:inline-block;
+margin-left:15px;
+padding-left:20px;
+padding-right:10px;
+    transition-duration:0.4s;}
+a{
+    text-decoration:none;
+    color: darkorchid
+}
+
+h3{
+    font-family: sans-serif;
+}
+
+h1{
+    font-family: sans-serif;
+}
+p{
+    background-color: #E8FDFF;
+      position: relative;
+}
+#footer img{
+    border: none;
+}
+#header p{
+background-color: #EDBAF8}
+#footer p{
+background-color: #FFD3E2}

@@ -1,0 +1,175 @@
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "top top top"
+                            "header header header"
+                            "strengths personalstatement weaknesses"
+                            "cocurriculars awards excellence"
+                            "experiences experiences references"
+                            "education education education"
+                            "footer footer footer";
+    text-align: center;
+    background-color: #E8FDFF;
+}
+#top{
+    grid-area: top;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "logo name"
+                        "logo nav";
+}
+#logo{
+    grid-area: logo;
+    background-color: #FAF3EA;
+}
+#name{
+    grid-area: name;
+    font-family: sans-serif;
+    background-color: #FFD3E2;
+}
+#nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "home culture aboutme skills";
+    background-color: #FFD3E2;
+}
+#nav a:hover{background-color:#FFF8E1;
+display:inline-block;
+margin-left:15px;
+padding-left:20px;
+padding-right:10px;
+    transition-duration:0.4s;}
+a{
+    text-decoration:none;
+    color: darkorchid;
+}
+#home{
+    grid-area: home;
+}
+#culture{
+    grid-area: culture;
+}
+#aboutme{
+    grid-area: aboutme;
+}
+#skills{
+    grid-area: skills;
+}
+#header{
+    grid-area: header;
+    background-color: #EDBAF8;
+    font-family: sans-serif;
+}
+#header p{
+        background-color: #EDBAF8;
+    font-family: inherit;
+}
+#strengths{
+    grid-area: strengths;
+}
+#personalstatement{
+    grid-area: personalstatement;
+}
+#weaknesses{
+    grid-area: weaknesses;
+}
+#cocurriculars{
+    grid-area: cocurriculars;
+    position: relative;
+}
+#cocurriculars p{
+    position: relative;
+    background-color: #E8FDFF;
+}
+#cocurriculars h4{
+    position: relative;
+    background-color: #E8FDFF;
+}
+p{
+    position: relative;
+    background-color: #E8FDFF;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#awards{
+    grid-area: awards;
+}
+#awards ul{
+    margin-left: 35px;
+    margin-right:35px;
+}
+
+#excellence{
+    grid-area: excellence;
+}
+#experiences{
+    grid-area: experiences;
+}
+#references{
+    grid-area: references;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title"
+                        "img p";
+}
+#title{
+    grid-area: title;
+}
+#img{
+    grid-area: img;
+}
+#p{
+    grid-area: p;
+}
+#p p{
+    margin-top:40px;
+}
+#education{
+    grid-area: education;
+}
+#footer{
+    grid-area: footer;
+    background-color: #FFD3E2;
+}
+#footer p{
+    background-color: #FFD3E2;
+}
+img{
+    transition: transform .2s;
+    border-radius: 70px;
+}
+img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+#logo img{
+    margin: 20px;
+}
+#strengths h4{
+    background-color: #FFD3E2;
+}
+#weaknesses h4{
+    background-color: #FFD3E2;
+}
+#personalstatement h4{
+    background-color: #FFD3E2;
+}
+#cocurriculars h4{
+    background-color: #EDBAF8;
+}
+#awards h4{
+    background-color: #EDBAF8;
+}
+#excellence h4{
+    background-color: #EDBAF8;
+}
+#experiences h4{
+    background-color: #FFD3E2;
+}
+#references h4{
+    background-color: #FFD3E2;
+}
+#education h4{
+    background-color: #EDBAF8;
+}

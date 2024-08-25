@@ -1,0 +1,200 @@
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "top top"
+                        "header header"
+                        "profile quote"
+                        "favourite favourite"
+                        "noodles science"
+                        "badminton tiktok"
+                        "books author"
+                        "movie author"
+                        "tub tub"
+                        "bike reading"
+                        "eating music"
+                        "tull tull"
+                        "careers careers"
+                        "jobs jobs"
+                        "footer footer";
+    text-align: center;
+    background-color: #E8FDFF;
+}
+#top{
+    grid-area: top;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "logo name"
+                        "logo nav";
+}
+#logo{
+    grid-area: logo;
+    background-color: #FAF3EA;
+}
+#logo img{
+    margin: 20px
+}
+#name{
+    grid-area: name;
+    background-color: #FFD3E2;
+    font-family: sans-serif;
+}
+#nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "home culture aboutme skills";
+    background-color: #FFD3E2;
+}
+#home{
+    grid-area: home;
+}
+#culture{
+    grid-area: culture;
+}
+#aboutme{
+    grid-area: aboutme;
+}
+#skills{
+    grid-area: skills;
+}
+#header{
+    grid-area: header;
+    background-color: #EDBAF8;
+    font-family: sans-serif;
+}
+#header p{
+    background-color: #EDBAF8;
+    font-family: inheritl
+}
+#profile{
+    grid-area: profile;
+}
+
+#noodles{
+    grid-area: noodles;
+}
+
+#science{
+    grid-area: science;
+}
+#quote{
+    grid-area: quote;
+}
+#badminton{
+    grid-area: badminton;
+    position: relative;
+}
+#tiktok{
+    grid-area: tiktok;
+        position: relative;
+
+}
+#hobbies{
+    grid-area: hobbies;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"tub tub" 
+                        "bike reading"
+                        "eating music";}
+    
+#tub{
+    grid-area: tub;
+    background-color: #EDBAF8;
+    margin: 10px;
+}
+#bike{
+    grid-area: bike;
+}
+#reading{
+    grid-area: reading;
+}
+#eating{
+    grid-area: eating;
+}
+#music{
+    grid-area: music;
+}
+#careers{
+    grid-area: careers;
+}
+#jobs{
+    grid-area: jobs;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "job1 job2 job3"
+}
+#job1{
+    grid-area: job1;
+}
+#job2{
+    grid-area: job2;
+}
+#job3{
+    grid-area: job3;
+}
+#footer{
+    grid-area: footer;
+    background-color: #FFD3E2;
+}
+#favourite{
+    grid-area: favourite;
+    background-color: #FFD3E2;
+    margin: 10px;
+}
+img{
+    transition: transform .2s;
+    border-radius: 70px;
+}
+img:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+#tull{
+    grid-area: tull;
+    background-color: #FFD3E2;
+    margin: 10px;
+}
+
+p{
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    background-color: #E8FDFF;
+    font-family: fantasy
+}
+#nav a:hover{background-color:#FFF8E1;
+display:inline-block;
+margin-left:15px;
+padding-left:20px;
+padding-right:10px;
+    transition-duration:0.4s;}
+a{
+    text-decoration:none;
+    color: darkorchid
+}
+h4{
+    position: relative;
+    background-color: #E8FDFF;
+    font-family: fantasy;
+}
+h3{
+font-family: sans-serif
+}
+no{
+text-decoration: underline;
+    background-color: aqua
+}
+#footer p{
+    background-color: #FFD3E2;
+    font-family: inherit
+}
+
+#books{
+    grid-area: books;
+}
+#movie{
+    grid-area: movie;
+}
+#author{
+    grid-area: author;
+}
